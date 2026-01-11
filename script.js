@@ -3,16 +3,14 @@ const projects = [
     {
         id: 1,
         title: "Racker",
-        description: "Sistema avanzado de seguimiento para entrenamientos de fuerza. Permite gestionar repeticiones, pesos y progresiones con una interfaz optimizada para móviles.",
+        description: "Sistema avanzado de seguimiento para entrenamientos de fuerza. Permite gestionar repeticiones, pesos y progresiones con una interfaz nativa optimizada.",
         githubUrl: "https://github.com/fsanztor01/TrainTracker",
         liveUrl: "https://github.com/fsanztor01",
         images: [
             "images/racker_1.png",
-            "images/racker_2.png",
-            "images/EzT1.png",
-            "images/EzT2.png"
+            "images/racker_2.png"
         ],
-        technologies: ["JavaScript", "CSS", "HTML", "PWA"]
+        technologies: ["React Native", "TypeScript", "Zustand"]
     },
     {
         id: 2,
