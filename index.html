@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francisco Sanz | Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Portfolio profesional de Francisco Sanz - Desarrollador apasionado por crear experiencias digitales excepcionales.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">FS<span>.</span></a>
+            <div class="nav-links">
+                <a href="#home">Inicio</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#connect">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <img src="images/hero_bg.png" alt="Background" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <span class="hero-pre-title">Hola, mi nombre es</span>
+                    <h1 class="hero-title">Francisco Sanz</h1>
+                    <p class="hero-subtitle">Desarrollador Digital enfocando en crear soluciones modernas, elegantes y
+                        funcionales.</p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
+                        <a href="#connect" class="btn btn-secondary">Contactar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="mouse"></div>
+                <span>Desliza para ver más</span>
+            </div>
+        </section>
+
+        <!-- Social Connect Section -->
+        <section id="connect" class="connect-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Conecta conmigo</h2>
+                    <p class="section-subtitle">Explora mi trabajo, mi trayectoria profesional y mis habilidades.</p>
+                </div>
+                <div class="connect-grid">
+                    <a href="https://github.com/fsanztor01" target="_blank"
+                        class="connect-card github reveal reveal-delay-1">
+                        <div class="connect-icon"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                        <p>Mira mis repositorios y contribuciones.</p>
+                        <span class="connect-link">Visitar perfil <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/francisco-sanz-torralvo-24108a350" target="_blank"
+                        class="connect-card linkedin reveal reveal-delay-2">
+                        <div class="connect-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>Hablemos sobre oportunidades profesionales.</p>
+                        <span class="connect-link">Conectar <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#" class="connect-card cv reveal reveal-delay-3" id="cv-download">
+                        <div class="connect-icon"><i class="fas fa-file-pdf"></i></div>
+                        <h3>Currículum</h3>
+                        <p>Descarga mi CV detallado en PDF.</p>
+                        <span class="connect-link">Descargar <i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                    <p class="section-subtitle">Una selección de mis trabajos más recientes y apasionantes.</p>
+                </div>
+                <div class="projects-grid reveal reveal-delay-1" id="projects-container">
+                    <!-- Projects will be injected by script.js -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Francisco Sanz. Hecho con <i class="fas fa-heart"></i> y pasión.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
