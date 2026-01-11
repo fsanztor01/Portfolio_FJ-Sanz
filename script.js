@@ -200,12 +200,18 @@ function initImageSlideshow(card) {
     card.addEventListener('mouseleave', stopSlideshow);
 }
 
-// CV Download alert
+// CV Download logic
 function initCVDownload() {
     const cvBtn = document.getElementById('cv-download');
     if (!cvBtn) return;
     cvBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert('El CV estará disponible para descargar próximamente. Por favor, contacta conmigo vía LinkedIn.');
+        // Enlazar al archivo PDF
+        const pdfUrl = 'CV Francisco Sanz 2026.pdf';
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = pdfUrl;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     });
 }
