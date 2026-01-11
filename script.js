@@ -156,9 +156,6 @@ function renderProjects() {
                     <a href="${project.githubUrl}" target="_blank" class="project-link github-btn">
                         <i class="fab fa-github"></i> GitHub
                     </a>
-                    <a href="${project.liveUrl}" target="_blank" class="project-link demo-btn">
-                        <i class="fas fa-external-link-alt"></i> Demo
-                    </a>
                 </div>
             </div>
         `;
