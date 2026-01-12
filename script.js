@@ -27,7 +27,7 @@ const projects = [
     {
         id: 3,
         title: "Easy Tracker",
-        description: "Evolución de TrainTracker enfocado en la simplicidad y el análisis de datos. Visualiza tu progreso con gráficas dinámicas y estadísticas detalladas.",
+        description: "Evolución de TrainTracker enfocado en la simplicidad y el análisis de datos. Visualiza tu progreso con gráficas dinámicas y estadísticas detalladas. PWA para una experiencia fluida y eficiente especialmente para móviles",
         githubUrl: "https://github.com/fsanztor01",
         liveUrl: "https://github.com/fsanztor01",
         images: [
