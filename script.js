@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
     initTheme();
     renderProjects();
-    initCVDownload();
     initScrollReveal();
 });
 
@@ -197,18 +196,4 @@ function initImageSlideshow(card) {
     card.addEventListener('mouseleave', stopSlideshow);
 }
 
-// CV Download logic
-function initCVDownload() {
-    const cvBtn = document.getElementById('cv-download');
-    if (!cvBtn) return;
-    cvBtn.addEventListener('click', (e) => {
-        // Enlazar al archivo PDF
-        const pdfUrl = 'CV Francisco Sanz 2026.pdf';
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.download = pdfUrl;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    });
-}
+
